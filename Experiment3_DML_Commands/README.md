@@ -296,6 +296,8 @@ select * from salesman where city not in ('Paris', 'Rome');
 ```
 
 **Output:**
+
+
 <img width="894" height="285" alt="Screenshot 2026-08-17 114452" src="https://github.com/user-attachments/assets/41b91002-6cf8-492d-a516-9610ec6fc714" />
 
 
