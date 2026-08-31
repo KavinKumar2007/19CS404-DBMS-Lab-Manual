@@ -98,7 +98,34 @@ Sum of first 10 natural numbers is: 55
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
 
+## Program:
+```
+SET SERVEROUTPUT ON;
 
+DECLARE
+    n NUMBER := 7;
+    a NUMBER := 0;
+    b NUMBER := 1;
+    c NUMBER;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Fibonacci sequence:');
+
+    FOR i IN 1..n LOOP
+        DBMS_OUTPUT.PUT(a);
+
+        IF i < n THEN
+            DBMS_OUTPUT.PUT(', ');
+        END IF;
+
+        c := a + b;
+        a := b;
+        b := c;
+    END LOOP;
+
+    DBMS_OUTPUT.NEW_LINE;
+END;
+/
+```
 
 
 ### Steps:
@@ -110,6 +137,10 @@ Sum of first 10 natural numbers is: 55
 **Expected Output:**  
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
+
+### Output:
+
+![image](https://github.com/user-attachments/assets/bb3a4da7-fb25-4616-8e45-c31255bb22a5)
 
 ---
 
